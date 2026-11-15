@@ -1,0 +1,25 @@
+# PurpleKush-XPFlaschen
+# Ab dem eingestellten Level wird neu erhaltene Erfahrung nicht mehr
+# als Level gutgeschrieben, sondern als Erfahrungsflaschen fallen gelassen.
+
+# Ab diesem Level (inklusive) werden Flaschen fallen gelassen.
+ab-level: 30
+
+# Durchschnittliche Erfahrung pro Flasche (Vanilla: 3-11, im Schnitt 7).
+# Anzahl Flaschen = erhaltene Erfahrung / dieser Wert.
+# Rest-Erfahrung geht nicht verloren, sie wird pro Spieler gespeichert
+# und beim nächsten Mal mitgerechnet.
+xp-pro-flasche: 7
+
+# true  = Erfahrung aus geworfenen Flaschen wird normal gutgeschrieben
+#         (so können Spieler Flaschen auch über Level 30 hinaus nutzen).
+# false = auch Erfahrung aus geworfenen Flaschen wird wieder zu Flaschen.
+geworfene-flaschen-geben-xp: true
+
+# Meldung in der Aktionsleiste, wenn Flaschen fallen gelassen wurden.
+# Platzhalter: %anzahl%   (leer lassen = keine Meldung)
+meldung: "&d+%anzahl% Erfahrungsflasche(n) fallen gelassen"
+
+nachrichten:
+  reload: "&aKonfiguration neu geladen."
+  keine-rechte: "&cDafür hast du keine Rechte."

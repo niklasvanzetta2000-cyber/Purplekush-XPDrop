@@ -1,0 +1,20 @@
+name: PurpleKush-XPFlaschen
+version: ${project.version}
+main: de.purplekush.xpflaschen.XPFlaschenPlugin
+api-version: "1.21"
+description: Ab Level 30 gibt es Erfahrung nur noch als Erfahrungsflaschen zum Aufsammeln.
+author: PurpleKush
+
+commands:
+  xpflaschen:
+    description: Verwaltet das XP-Flaschen-Plugin
+    usage: /xpflaschen reload
+    permission: purplekush.xpflaschen.admin
+
+permissions:
+  purplekush.xpflaschen.admin:
+    description: Darf das Plugin neu laden
+    default: op
+  purplekush.xpflaschen.bypass:
+    description: Ausgenommen von der Umwandlung (normales Leveln)
+    default: false
